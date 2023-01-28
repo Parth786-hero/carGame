@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&display=swap');
+*{
+    margin : 0;
+    padding : 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+.card{
+    /* border : 2px solid red; */
+    width : 100%;
+    height : 100vh;
+    background-color: rgba(128, 128, 128, 0.217);
+    position: relative;
+    z-index : 0;
+}
+.car{
+    position : absolute;
+    bottom : 35px;
+    left : 25px;
+    background-color: red;
+    width : 52px ;
+    height : 95px;
+    cursor:pointer;
+    z-index : 5;
+    /* transition: all .5s ease-in-out; */
+}
+.enemy{
+    width : 52px;
+    height : 95px;
+    position : absolute;
+    z-index : 5;
+}
+.score-card{
+    /* border : 2px solid red; */
+    border-radius: 5px;
+    position: absolute;
+    padding : 12px 18px;
+    top : 45px;
+    left : 45px;
+    min-width : 250px;
+    text-align: center;
+    background-color:rgb(26, 24, 24);
+    color : white;
+    letter-spacing: 1px;
+    line-height: 28px;
+    text-transform: capitalize;
+    /* min-height : 100px; */
+}
+#score{
+    font-size : 28px;
+    text-transform: capitalize;
+    margin-bottom:12px;
+}
+#number{
+    margin-top:8px;
+}
+.pop-up{
+    /* border : 2px solid red; */
+    z-index : 8;
+    border-radius: 5px;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform : translate(-50% , -50%);
+    width : 50%;
+    padding:40px 0;
+    cursor: pointer;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+    font-size: 18px;
+    font-weight: 500;
+    color : rgb(26, 24, 24);
+    line-height: 34px;
+    height : 180px;
+    text-align: center;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.171);
+    color : black;
+    background-color: white;
+}
+.road{
+    /* border : 2px solid red; */
+    margin :auto;
+    width : 500px;
+    height : 100vh;
+    /* background-color:rgba(0, 0, 0, 0.171);; */
+    background-color:rgb(26, 24, 24);
+    z-index: -1;
+    position: relative;
+    overflow: hidden;
+}
+
+.line{
+    width : 12px;
+    height : 105px;
+    /* top : 0px; */
+    /* background-color: white; */
+    background-color:white;
+    position: absolute;
+    /* margin : auto; */
+    margin-left :244px 
+}
+.hide{
+    display: none;
+}
